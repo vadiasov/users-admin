@@ -1,0 +1,13 @@
+{
+    "name": "vadiasov/users-admin",
+    "description": "Creates user-roles DB table. Serve CRUD operation for \"users\" DB table. Serves user-roles operations.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vadis",
+            "email": "volodymyr.vadiasov@gmail.com"
+        }
+    ],
+    "require": {}
+}
