@@ -9,5 +9,10 @@
             "email": "volodymyr.vadiasov@gmail.com"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "Vadiasov\\UsersAdmin\\": "src"
+        }
+    },
     "require": {}
 }
