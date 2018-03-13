@@ -10,13 +10,7 @@
 
 // src/Http/routes.php
 
-/* Test */
-Route::get('users-admin-todos', function(){
-    return 'Here goes the Users list';
-});
-Route::get('admin/get-users-admin', 'Vadiasov\UsersAdmin\Http\UsersController@showUser');
-
-Route::group(['middleware' => ['web']], function () {
+Route::group(['middleware' => ['web', 'admin']], function () {
     Route::get('admin/users', 'Vadiasov\UsersAdmin\Http\UsersController@index')->name('admin/users');
     Route::get('admin/users/create', 'Vadiasov\UsersAdmin\Http\UsersController@create')->name('admin/users/create');
     Route::post('admin/users/create', 'Vadiasov\UsersAdmin\Http\UsersController@store');
